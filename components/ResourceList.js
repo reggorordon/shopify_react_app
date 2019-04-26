@@ -11,6 +11,7 @@ import store from 'store-js';
 import { Redirect } from '@shopify/app-bridge/actions';
 import * as PropTypes from 'prop-types';
 
+
 const GET_PRODUCTS_BY_ID = gql`
   query getProducts($ids: [ID!]!) {
     nodes(ids: $ids) {
